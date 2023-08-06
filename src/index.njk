@@ -1,9 +1,10 @@
 ---
 layout: base.njk
 isFront: true
+nav: navbar.njk
 ---
 <header class="header w-full min-h-screen flex flex-col justify-between">
-  {% include "navbar.njk" %}
+  {% include {{nav}} %}
   {% include "section.header.njk" %}
 </header>
 <main>
