@@ -1,54 +1,21 @@
-# 11ty-landing-page
+# Play - Free Tailwind CSS Template for Startup, Apps and SaaS
 
-A simple landing page built with 11ty and Tailwind CSS.
+Play is an open-source and free Tailwind CSS template co-created by TailGrids and UIdeck. This template specially crafted for SaaS, startup, business and software website.
+Play crafted in a way that you can use with almost all sort of web project. This is Tailwind CSS version of our old [Bootstrap](https://preview.uideck.com/items/play-bootstrap/) project.
 
-> Port of the [Hugo Version](https://github.com/ttntm/hugo-landing-page)
+### This template crafted using 🥞 [TailGrids](https://tailgrids.com/) UI components
 
-## How to use this template
+### [🚀 View Demo](https://play-tailwind.tailgrids.com/)
 
-**Requirements:**
+### [⬇️ Download Now](https://links.tailgrids.com/play-download)
 
-1. Eleventy (developed and tested with version 0.12.1)
-2. Tailwind CSS
+[![play-tailwind](https://cdn.tailgrids.com/play-tailwind.jpg)](https://play-tailwind.tailgrids.com/)
 
-All other dependencies are either linked from a CDN or included in this repository.
+## 📃 License
 
-**Setup:**
+Play is an open-source template, you can use it with your personal or commercial projects without any attribution or backlink.
 
-1. Fork, clone or download
-2. `cd` into the root folder
-3. run `npm install`
-4. run `npm run serve`
-5. open a browser and go to `http://localhost:8080`
+## 💙 Support
 
-**Basic configuration:**
-
-1. Eleventy -> `./.eleventy.js`
-2. Tailwind -> `./tailwind.config.js`
-3. Netlify -> `./netlify.toml`
-
-CSS is built via PostCSS and based on `./src/_includes/css/_page.css`. Building CSS gets triggered by `./src/css/page.11ty.js` and Tailwind's config is set to JIT (see: [Tailwind docs](https://tailwindcss.com/docs/just-in-time-mode))
-
-Please note that this CSS build _does not_ include the `normalize.css` file used for the 2 regular pages (imprint, privacy) - a minified production version is stored in `./src/static/css` and gets included in the build by default.
-
-**Change Content:**
-
-Page content is stored in
-
-- `./src/`
-  - `imprint.md`
-  - `privacy.md`
-- `./src/sections/`
-- `./src/_data/features.json`
-
-**Change Templates/Layout:**
-
-Page structure and templates are stored in `./src/_layouts/` and can be edited there.
-
-Best have a look at `./layouts/base.njk` first to understand how it all comes together - the page itself is constructed from partial templates stored in `./src/includes/` and each section has a corresponding template file (`section.**.njk`) stored there.
-
-`index.njk` in `./src/` arranges everything, meaning that sections can be added/re-ordered/removed/... there.
-
-**Change images:**
-
-Images are stored in `./static/img/`; everything in there can be considered a placeholder that should eventually be replaced with your actual production images.
+You can always support this project by [Starring🌟 This Repository](https://github.com/tailgrids/play-tailwind)
+and sharing with friends. Also open an issue if you find bug or feel free to contribute by pull requests after fixing any issue or adding more values.
