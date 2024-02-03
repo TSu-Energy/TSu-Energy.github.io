@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中英文切换按钮</title>
+</head>
+
+<body>
+
+    <div id="content">
+        <h1 id="title">你好，世界！</h1>
+        <p id="paragraph">这是一个简单的中英文切换按钮示例。</p>
+    </div>
+
+    <button onclick="toggleLanguage()">切换语言</button>
+
+    <script>
+        function toggleLanguage() {
+            var titleElement = document.getElementById('title');
+            var paragraphElement = document.getElementById('paragraph');
+
+            if (document.documentElement.lang === 'zh-CN') {
+                document.documentElement.lang = 'en';
+                titleElement.textContent = 'Hello, World!';
+                paragraphElement.textContent = 'This is a simple example of a language toggle button.';
+            } else {
+                document.documentElement.lang = 'zh-CN';
+                titleElement.textContent = '你好，世界！';
+                paragraphElement.textContent = '这是一个简单的中英文切换按钮示例。';
+            }
+        }
+    </script>
+
+</body>
+
+</html>
