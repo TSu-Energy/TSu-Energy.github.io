@@ -98,6 +98,7 @@ h5,
 h6 {
   font-size: inherit;
   font-weight: inherit;
+  margin-top: 10px;
 }
 
 /*
@@ -318,7 +319,7 @@ hr,
 figure,
 p,
 pre {
-  margin: 0;
+  margin: 10;
 }
 
 fieldset {
@@ -410,6 +411,7 @@ object {
   /* 1 */
   vertical-align: middle;
   /* 2 */
+  text-align: center;
 }
 
 /*
@@ -847,6 +849,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-full {
   width: 100%;
+}
+
+.w-most {
+  width: 70%;
 }
 
 .w-60 {
