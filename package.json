@@ -1,17 +1,28 @@
 {
-  "name": "play-tailwind",
-  "version": "1.0.0",
-  "description": "",
-  "main": "tailwind.config.js",
+  "name": "tsu-energy",
+  "version": "2.0.0",
+  "description": "TSu Energy - Electrochemistry Modelling and Management Official Website",
+  "main": "index.html",
   "scripts": {
-    "build-css": "tailwindcss -i ./src/tailwind.css -o ./assets/css/tailwind.css -w"
+    "dev": "tailwindcss -i ./src/tailwind.css -o ./assets/css/tailwind.css --watch",
+    "build": "tailwindcss -i ./src/tailwind.css -o ./assets/css/tailwind.css --minify",
+    "build:prod": "npm run build && npm run optimize",
+    "optimize": "echo 'Build optimized for production'",
+    "format": "prettier --write \"**/*.{html,js,css,json,md}\"",
+    "format:check": "prettier --check \"**/*.{html,js,css,json,md}\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/uideck/play-tailwind.git"
+    "url": "git+https://github.com/TSu-Energy/TSu-Energy.github.io.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "electrochemistry",
+    "energy",
+    "modelling",
+    "management",
+    "tailwindcss"
+  ],
+  "author": "TSu Energy Team",
   "license": "MIT",
   "devDependencies": {
     "prettier": "^2.6.2",
